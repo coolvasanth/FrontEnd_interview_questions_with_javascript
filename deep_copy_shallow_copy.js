@@ -36,4 +36,39 @@ function question3(){
     console.log(user2);  
     console.log(user1);    
 }
-question3()
+
+
+// Question 4
+function question4(){
+    const testObject1 = {
+        sampleDate: new Date(),
+    };
+    const testObject2 = JSON.parse(JSON.stringify(testObject1));
+    console.log(testObject1);
+    console.log(testObject2);    
+}
+
+// Question 5
+function question5(){
+    const testObject1 = {
+        sampleFunction: console.log,
+        sampleUndefined: undefined
+    };
+    const testObject2 = JSON.parse(JSON.stringify(testObject1));
+    console.log(testObject1);
+    console.log(testObject2);
+}
+
+
+// Question 6
+function question6(){
+    const testObject1 = {
+        sampleFunction: question2,
+        sampleInfinity: -Infinity,
+        sampleNaN: NaN,
+    };
+    const testObject2 = testObject1;
+    console.log(testObject1);
+    console.log(testObject2);
+}
+
