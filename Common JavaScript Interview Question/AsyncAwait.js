@@ -9,9 +9,9 @@ async function testPromise3() {
 }
 
 console.log('Before async await'); // 2
-testPromise1.then(num1 => {
-  testPromise2.then(num2 => {
-    testPromise3.then(num3 => {
+testPromise1().then(num1 => {
+  testPromise2().then(num2 => {
+    testPromise3().then(num3 => {
       console.log(num1 + num2 + num3);
       console.log('After async await');//4
     })
